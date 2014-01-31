@@ -1,0 +1,155 @@
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 320px;
+  font-weight: 300;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.screen {
+  height: 700px;
+  position: relative;
+}
+
+.intro {
+  padding: 0px 240px 40px 240px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.weights-gallery {
+  cursor: pointer;
+  font-size: 400px;
+  position: relative;
+}
+
+.weights-gallery .weight {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  opacity: 0.4;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+
+.weight-100 {
+  font-weight: 100;
+}
+
+.weight-300 {
+  font-weight: 300;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.weights-gallery.expanded .weight {
+  opacity: 1;
+}
+
+.weights-gallery.expanded .weight-100 {
+  left: 20%;
+}
+
+.weights-gallery.expanded .weight-300 {
+  left: 35%;
+}
+
+.weights-gallery.expanded .weight-400 {
+  left: 50%;
+}
+
+.weights-gallery.expanded .weight-700 {
+  left: 65%;
+}
+
+.weights-gallery.expanded .weight-900 {
+  left: 80%;
+}
+
+#style-switch {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: italic;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.weight-info {
+  font-size: 40px;
+  font-weight: 100;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.expanded .weight-info {
+  opacity: 1;
+    -webkit-transition: all 500ms ease-out 500ms;
+    -moz-transition: all 500ms ease-out 500ms;
+    transition: all 500ms ease-out 500ms;
+}
+
+.languages-gallery {
+  cursor: pointer;
+  font-size: 250px;
+  font-weight: 400;
+}
+
+.language {
+  display: none;
+  margin-bottom: 100px;
+}
+
+.language.active {
+  display: block;
+}
+
+.language-info {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#current-language {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+
+

@@ -3,10 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>specimen</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
-    <!-- page content -->
+	  <div class="screen" id="screen-1">
+  	  <h1>Lato</h1>
+  	  <h2>With the feeling of the Summer</h2>
+    </div>
+
+    <div class="screen" id="screen-2">
+      <p class="intro">Lato is a sanserif typeface family designed in the Summer 2010 by Warsaw-based designer Łukasz Dziedzic (“Lato” means “Summer” in Polish). In December 2010 the Lato family was published under the open-source Open Font License by his foundry tyPoland, with support from Google.</p>
+
+      <p class="intro">When working on Lato, Łukasz tried to carefully balance some potentially conflicting priorities. He wanted to create a typeface that would seem quite “transparent” when used in body text but would display some original traits when used in larger sizes. He used classical proportions (particularly visible in the uppercase) to give the letterforms familiar harmony and elegance. At the same time, he created a sleek sanserif look, which makes evident the fact that Lato was designed in 2010 — even though it does not follow any current trend.</p>
+    </div>
+
+    <div class="screen" id="screen-3">
+      <div class="weights-gallery">
+        <span class="weight weight-100">
+          a
+          <span class="weight-info">100</span>
+        </span>
+
+        <span class="weight weight-300">
+          a
+          <span class="weight-info">300</span>
+        </span>
+        
+        <span class="weight weight-400">
+          a
+          <span class="weight-info">400</span>
+        </span>
+        
+        <span class="weight weight-700">
+          a
+        <span class="weight-info">700</span>
+       </span>
+        
+        <span class="weight weight-900">
+          a
+        <span class="weight-info">900</span>
+        </span>
+     </div>
+      
+      <a href="#" id="style-switch">
+        i
+      </a>
+    </div>
+
+    <div class="screen" id="screen-4">
+      <div class="languages-gallery">
+        <p class="language active" id="finnish">kesä</p>
+        <p class="language" id="albanian">verë</p>
+        <p class="language" id="czech">léto</p>
+        <p class="language" id="french">été</p>
+        <p class="language" id="hungarian">nyári</p>
+        <p class="language" id="portuguese">verão</p>
+        <p class="language" id="viatnamese">mùa hè</p>
+      </div>
+      <p class="language-info">Now you know how to say summer in <span id="current-language">Finnish</span></p>
+    </div>
+    
   </body>
 </html>
