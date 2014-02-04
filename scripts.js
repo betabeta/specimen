@@ -5,7 +5,26 @@ $(document).ready(function(){
   });
 
   $("#style-switch").click(function() {
-    $(".weights-gallery .weight").toggleClass("italic");
+    if ($(".weights-gallery").hasClass("expanded")) {
+      $('.weights-gallery .weight').each(function(i) {
+        (function(self, j) {
+          setTimeout(function() {
+            $(self).toggleClass('italic');
+          },(j*80)+80);
+        })(this, i);
+      });
+    } else {
+      $(".weights-gallery .weight").toggleClass('italic')
+    }
+
+  $(this).toggleClass("italic");
+
+  if ($(this).hasClass("italic")) {
+    $(this).html("i");
+  } else {
+    $(this).html("r");
+  }
+
     return false;
   });
 
@@ -20,5 +39,17 @@ $(document).ready(function(){
       $("#current-language").html(next.attr("id"));
     }
   });
+
+  $(".select-style").change(function() {
+    var value = $(this).val().split("-");
+    var weight = value[0];
+    var style = value[1];
+    $(this).parents(".editable-row").find("input").css({"font-style": style, "font-weight": weight});
+  }).change();
+
+  $(".select-size").change(function() {
+    var size = $(this).val();
+    $(this).parents(".editable-row").find("input").css("font-size", size);
+  }).change();
 
 });
